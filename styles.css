@@ -1,11 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+
 
 :root {
     --bg-color: #000;
-    --typewriterSpeed: 6s;
-    --typewriterCharacters: 24;
+    --typewriterSpeed: 5s;
+    --typewriterCharacters: 22;
 }
 
 body {
@@ -53,7 +55,7 @@ nav ul a {
 }
 .box-1 {
     flex: 1;
-    padding-right: 2rem;
+    padding: 2rem;
 }
 img {  
     max-width: 100%;  
@@ -61,10 +63,11 @@ img {
     }  
 h1{
     color:goldenrod;
-    font-weight: 700;
+    font-weight: 400;
     font-size: clamp(1rem, 3vw + 1rem, 5rem);
     position: relative;
     width: max-content;
+    font-family: monospace, sans-serif;
 }
 
 h1::before,
@@ -78,14 +81,14 @@ h2::after {
 }
 
 h1::before {
-    background:var(--bg-color);
+    background:#000;
     animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) 1s forwards;
 }
 
 h1::after {
     width: 0.125em;
-    background:#fff;
+    background:#000;
     animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) 0.5s forwards,
     blink 750ms steps(var(--typewriterCharacters)) infinite;
