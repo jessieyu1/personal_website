@@ -6,12 +6,12 @@
 
 :root {
     --bg-color: #000;
-    --typewriterSpeed: 5s;
+    --typewriterSpeed: 2s;
     --typewriterCharacters: 22;
 }
 
 body {
-    background: var(--bg-color);
+    background: rgb(25,25,25);
     margin:0rem;
     padding:0rem;
     font-family: 'Montserrat', sans-serif;
@@ -53,6 +53,8 @@ nav ul a {
     align-items: stretch;
     padding: 2rem;
 }
+
+
 .box-1 {
     flex: 1;
     padding: 2rem;
@@ -66,12 +68,16 @@ h1{
     font-weight: 400;
     font-size: clamp(1rem, 3vw + 1rem, 5rem);
     position: relative;
-    width: max-content;
     font-family: monospace, sans-serif;
+    text-align: center;
+}
+
+#name {
+    width: max-content;
 }
 
 h1::before,
-h2::after {
+h1::after {
     content: '';
     position:absolute;
     top:0;
@@ -81,16 +87,16 @@ h2::after {
 }
 
 h1::before {
-    background:#000;
+    background:rgb(25,25,25);
     animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) 1s forwards;
 }
 
 h1::after {
     width: 0.125em;
-    background:#000;
+    background:rgb(25,25,25);
     animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 0.5s forwards,
+    steps(var(--typewriterCharacters)) 0.2s forwards,
     blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 
@@ -115,10 +121,11 @@ h1::after {
 .box-2{
     flex: 1;
     padding-left: 2rem;
-    padding: 2rem;
+    padding-right: 2rem;
 }
 
 .sub-1,.sub-2,.sub-3 {
+    text-align:center;
     font-weight: 400;
     line-height: 3rem;
     opacity: 0;
@@ -138,7 +145,15 @@ footer{
 }
 
 footer p{
+    text-align: center;
     font-size: 1rem;
     align-items: center;
     color: #fff;
+}
+
+.container-2 {
+
+    align-items: stretch;
+    padding: 2rem;
+    margin:2rem;
 }
