@@ -9,17 +9,11 @@
 
 body {
     background: rgb(25,25,25);
-    margin:0rem;
+    margin: 0;
     padding:0rem;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-weight: 100;
-}
-
-header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
 }
 
 a {
@@ -66,12 +60,10 @@ h1{
     font-size: clamp(1rem, 3vw + 1rem, 5rem);
     position: relative;
     font-family: monospace, sans-serif;
+    width: max-content;
     text-align: center;
 }
 
-#name {
-    width: max-content;
-}
 
 h1::before,
 h1::after {
@@ -122,18 +114,13 @@ h1::after {
     flex-direction: column;
 }
 
-.sub-1,.sub-2,.sub-3 {
+h2, .sub-2,.sub-3 {
 
-    text-align:center;
+    text-align: center;
     font-weight: 400;
     line-height: 3rem;
-    opacity: 0;
-    transform: translateY(3rem);
-    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
 }
-.sub-1 {
-    color: goldenrod;
-}
+
 
 footer {
     width: 100%;
@@ -212,4 +199,9 @@ footer p {
 label {
     line-height: 2rem;
     font-family: monospace;
+}
+
+.txt-type > .txt {
+    border-right: 0.1rem solid #ccc;
+    border-bottom: 0.1rem solid goldenrod;
 }
