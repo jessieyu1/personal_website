@@ -3,80 +3,65 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="This is Jiaxin Yu's personal website. Want to know more about my career? Find out how I start my career as a full-stack developer. Hope my story can inspire you!">
-        <meta name="keywords" content="HTML, CSS, JavaScript,Fullstack">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Fullstack">
         <meta name="author" content="Jiaxin Yu">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jiaxin Yu's Personal Website</title>
         <meta property="og:title" content="Jiaxin Yu's Personal Website" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="images/icon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <section>
-        <header>
-            <nav>
-                <ul class="nav_links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="skills.html">Skills</a>
-                    <a href="contact.html">Contact</a>
-                </ul>
-            </nav>
-        </header>
-        <div class="container-1">
-            <div class="box-1">
-                <img src="images/icon.png" alt="Placeholder avatar">
-            </div>
-            <div class="box-2">
-                <h1>Hi, my name is Jiaxin.</h1>
-                <h2>I'm a <span class="txt-type" data-wait="3000" data-words='["developer. ","designer. ", "creator. "]'></span></h2>
-                <p class="sub-2">Welcome to my website!</p>
-                <p class="sub-3">As an experienced Web Developer, I create and develop beautiful things online that are engaging, interactive and user friendly.</p>
-                <p class="sub-3">Get in touch to find out how my coding services can suit your needs.</p>
-            </div >
-        </div> 
-        <div class="container-2">
-            <h1 class="box-1">Who I am</h1>
-            <div class="box-2">
-                <h2 class='sub-1'>A Passionate Web Developer.</h2>
-            </div>
-            <div class="box-3">
-                <p class="sub-2">I’m a creative full-stack Developer with extensive experience in web development and coding. I pride myself on exceeding my clients’ expectations. 
-                    Contact me to find out more about my skills and current work availability.</p>
-            </div >
-            <div class="box-4">
-                <img src="images/desktop.png" alt="desktop"/> 
-            </div>
-        </div>
-        <div class="container-2">
-            <div class="box-1">
-                <h1>Contact Jiaxin</h1>
-            </div>
-            <div class="box-2">
-                <form class="container-3">
-                    <div class="details-area">
+        <div class="container">
+            <section>
+            <header>
+                <nav>
+                    <ul class="nav_links">
+                            <li><a  class="home" href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container-content">
+                <div class="profile-pic">
+                    <img src="./images/profile.png" alt="Placeholder avatar">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <h1>JIAXIN YU</h1>
+                    </div>
+                    <div class="description">
+                        <h2>I'm a <span class="txt-type" data-wait="3000" data-words='["developer. ","designer. ", "creator. "]'></span></h2>
+                    </div>
+                    <div class="details">
+                        <p class="details-content">Welcome to my website!</p>
+                        <p class="details-content">As an experienced Web Developer, I create and develop beautiful things online that are engaging, interactive and user friendly.</p>
+                        <p class="details-content">Get in touch to find out how my coding services can suit your needs.</p>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="fa fa-github"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a> 
+
+                    </div>
+                    
+                 
+                
                         
-                        <label for="fname">*First Name</label>
-                        <input id ="fname" type="fname" placeholder="Enter your first name.."></input>
-                        <label for="lname">*Last Name</label>
-                        <input id ="lname" type="lname" placeholder="Enter your last name.."></input>
-                        <label for="email">*Email</label>
-                        <input id ="email" type="email" placeholder="Enter your email..">
                     </div>
-                    <div class="msg-area">
-                        <label for="msg">*Your message</label>
-                        <textarea placeholder="Type your message here.."></textarea>
-                        <!-- <button href="" type="submit">Submit</button> -->
-                    </div>
-                </form>
-            </div >
-        </div> 
-        <script src="main.js"></script>
-        <footer>
-            <p>&#169;2021 Jiaxin Yu Australia All rights reserved.</p>
-        </footer>
+                </div >
+            </div>
+            <script src="main.js"></script>
+            <footer>
+                <p>&#169;2021 Jiaxin Yu All rights reserved.</p>
+            </footer>
+        </div>
     </body>
 </html>

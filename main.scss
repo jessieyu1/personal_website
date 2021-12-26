@@ -1,130 +1,62 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
-
-:root {
-    --bg-color: #000;
-    --typewriterSpeed: 2s;
-    --typewriterCharacters: 22;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&family=Roboto:wght@100;300;400&display=swap');
 
 body {
     background: rgb(25,25,25);
     margin: 0;
-    padding:0rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    font-weight: 100;
+    padding: 0;
+    color: #ccc;
+    
+}
+
+.container {
+    background: rgb(25,25,25);
+    width: 60%;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-evenly;  
+    align-items: center; 
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+    :hover {
+        cursor: pointer;
+        color: #fff;
+    }
+    :active {
+        color: goldenrod;
+    }
 }
 
 a {
     text-decoration: none;
-    color: #fff;
-    font-weight: 100; 
-}
-
-nav {
-    width: 100%;
-    height: 5vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    box-shadow: 0.2rem 0.2rem 1.2rem rgba(240, 235, 235, 0.2);
-}
-
-nav ul a {
-    display: inline-block;
-    margin: 0.3rem;
-    color: #fff;
-    font-size: 1rem;
-}
-
-.container-1 {
-    display: flex;
-    align-items: stretch;
-    padding: 2rem;
-}
-
-
-.box-1 {
-    flex: 1;
-    padding: 2rem;
-}
-img {  
-    max-width: 100%;  
-    height: auto;  
-    }  
-h1{
-    color:goldenrod;
-    font-weight: 400;
-    font-size: clamp(1rem, 3vw + 1rem, 5rem);
-    position: relative;
+    color: #ccc;
     font-family: monospace, sans-serif;
-    width: max-content;
-    text-align: center;
+    font-weight: 100;
 }
-
-
-h1::before,
-h1::after {
-    content: '';
-    position:absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
+.home {
+    color: goldenrod;
 }
-
-h1::before {
-    background:rgb(25,25,25);
-    animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 1s forwards;
-}
-
-h1::after {
-    width: 0.125em;
-    background:rgb(25,25,25);
-    animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 0.2s forwards,
-    blink 750ms steps(var(--typewriterCharacters)) infinite;
-}
-
-@keyframes typewriter {
-    to {
-        left:100%
-    }
-}
-
-@keyframes blink {
-    to {
-        background: transparent;
-    }
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.box-2 {
-    flex: 1;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    flex-direction: column;
-}
-
-h2, .sub-2,.sub-3 {
-
-    text-align: center;
-    font-weight: 400;
-    line-height: 3rem;
-}
-
 
 footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,24 +65,153 @@ footer {
 
 footer p {
     text-align: center;
-    font-size: 1rem;
     align-items: center;
-    color: #fff;
+    font-family: monospace, sans-serif;
+    color: #ccc;
 }
 
-.container-2 {
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius:50%; 
+    overflow: hidden;
+    align-self: center;
+}
+img {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 35rm;
+}
+.content {
     padding: 2rem;
-    margin:2rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.container-3 {
-    margin:1rem auto;
-    max-width: 40rem;
-    padding: 2rem;
-    opacity: 0;
-    transform: translateY(3rem);
-    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+.social {
+    display: flex;
+    padding: 2px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    border-radius: 50%;
 }
+
+.fa{
+    padding-right: 20px;
+
+}
+
+h1 {
+    color: goldenrod;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 3vh;
+}
+
+.description   {
+    color: #ccc;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 5vh;
+}
+
+span {
+    color: goldenrod;
+}
+
+.details {
+    font-family: Roboto, sans-serif;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    .container-content {
+        flex-direction: column;
+    }
+    .img{
+        width: 50%;}
+    }
+    
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    footer p{
+        width: 50%;
+        font-size: 0.5em;
+    }
+    img {
+        height: 30%;
+    }
+}
+    
+
+// h1{
+//     color:goldenrod;
+//     font-weight: 400;
+//     font-size: clamp(1rem, 3vw + 1rem, 5rem);
+//     position: relative;
+//     font-family: monospace, sans-serif;
+//     width: max-content;
+//     text-align: center;
+// }
+
+
+// h1::before,
+// h1::after {
+//     content: '';
+//     position:absolute;
+//     top:0;
+//     left:0;
+//     bottom:0;
+//     right:0;
+// }
+
+// h1::before {
+//     background:rgb(25,25,25);
+//     animation: typewriter var(--typewriterSpeed)
+//     steps(var(--typewriterCharacters)) 1s forwards;
+// }
+
+// h1::after {
+//     width: 0.125em;
+//     background:rgb(25,25,25);
+//     animation: typewriter var(--typewriterSpeed)
+//     steps(var(--typewriterCharacters)) 0.2s forwards,
+//     blink 750ms steps(var(--typewriterCharacters)) infinite;
+// }
+
+// @keyframes typewriter {
+//     to {
+//         left:100%
+//     }
+// }
+
+// @keyframes blink {
+//     to {
+//         background: transparent;
+//     }
+// }
+
+// @keyframes fadeInUp {
+//     to {
+//         opacity: 1;
+//         transform: translateY(0);
+//     }
+// }
+
+
+
+
+
 
 .msg-area {
 
