@@ -1,37 +1,77 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="This is Jiaxin Yu's personal website. Want to know more about my career? Find out how I start my career as a full-stack developer. Hope my story can inspire you!">
-        <meta name="keywords" content="HTML, CSS, JavaScript, Fullstack">
-        <meta name="author" content="Jiaxin Yu">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jiaxin Yu's Personal Website</title>
-        <meta property="og:title" content="Jiaxin Yu's Personal Website" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./img/icon.png" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="./css/styles.css">
-    </head>
-    <body>
-        <section>
-            <header>
-                <nav>
-                    <ul class="nav_links">
-                            <li><a  class="home" href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="skills.html">Skills</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-        <div>
-            <h1>My Portfolio</h1>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="This is Jiaxin Yu's personal website. Want to know more about my career? Find out how I start my career as a full-stack developer. Hope my story can inspire you!">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Fullstack">
+    <meta name="author" content="Jiaxin Yu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiaxin Yu's Personal Website</title>
+    <meta property="og:title" content="Jiaxin Yu's Personal Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./img/icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <nav>
+                <ul class="nav_links">
+                    <li><a class="home" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content-container">
+            <div class="content">
+                <p class="project-content">Making Things That Make a Difference</p>
+                <h1 class="title">MY PROJECT</h1>
+                <p class="project-content">My work is done with the utmost attention to detail, and is focused on beautiful, functional, and
+                    user-friendly final results. Check out the projects and samples of my work below and discover what I
+                    can do for you today.</p>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./img/p1.jpg" style="width:100%">
+                    <div class="text">Project 1</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./img/p2.jpg" style="width:100%">
+                    <div class="text" >Project 2</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./img/p3.jpg" style="width:100%">
+                    <div class="text">Project 3</div>
+                  </div>
+                   <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>   
         </div>
-        <footer>
-            <p>&#169;2021 Jiaxin Yu Australia All rights reserved.</p>
-        </footer>
-    </body>
+        <script src="./js/slideshow.js"></script>
+            <footer>
+                <p>&#169;2021 Jiaxin Yu Australia All rights reserved.</p>
+            </footer>
+        </div>
+    </section>
+</body>
+
 </html>
