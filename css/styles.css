@@ -65,7 +65,6 @@ footer p {
   text-align: center;
   align-items: center;
   font-size: 0.8rem;
-  color: #ccc;
 }
 
 .profile-pic {
@@ -153,7 +152,6 @@ span {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -263,58 +261,31 @@ span {
     font-size: 11px;
   }
 }
-.msg-area {
-  flex-direction: column;
-  order: 2;
-  padding: 1rem;
-  height: 30rem;
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
 }
 
-.msg-area textarea {
+.msg-button {
   width: 100%;
-  flex: 1;
-  background: transparent;
-  color: #fff;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-color: white;
-}
-
-.details-area {
-  flex: 1;
-  order: 1;
-  padding: 1rem;
-}
-
-.details-area input {
-  width: 100%;
-  background: transparent;
-  border-color: white;
-}
-
-.details-area input,
-.msg-area button {
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.msg-area button {
   background-color: goldenrod;
   border: 0;
-  color: #000;
+  color: #191919;
   padding: 15px 50px;
   border-radius: 4rem;
-  font-family: monospace;
+  cursor: pointer;
 }
 
-label {
-  line-height: 2rem;
-  font-family: monospace;
+.msg-button:hover {
+  background-color: gold;
+  color: #191919;
 }
 
-.txt-type > .txt {
-  border-right: 0.1rem solid #ccc;
-  border-bottom: 0.1rem solid goldenrod;
+.msg-button:active {
+  background-color: #ccc;
+  color: #191919;
 }
 
 /*# sourceMappingURL=styles.css.map */
