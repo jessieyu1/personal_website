@@ -220,32 +220,7 @@ span {
     to {opacity: 1}
   }
 
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 80%;
-    }
-    .container-content {
-        flex-direction: column;
-    }
-    .img{
-        width: 50%;}
-    }
-    
-@media only screen and (max-width: 480px) {
-    .container {
-        width: 100%;
-    }
-    footer p{
-        width: 50%;
-        font-size: 0.5em;
-    }
-    img {
-        height: 30%;
-    }
-    .prev, .next,.text {
-        font-size: 11px
-    }
-}
+
 .button-container {
     display: flex;
     justify-content: space-evenly;
@@ -271,4 +246,68 @@ span {
 .msg-button:active {
     background-color: #ccc;
     color: rgb(25,25,25);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 6rem;
+    gap: 20px;
+    padding: 0.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 0 8px 8px 0 black;
+    transition: 0.3s;
+    padding: 15px 20px 20px 20px;
+}
+
+.card-img {
+    width: 7rem;
+    height: 7rem;
+    padding-bottom: 0.8rem;
+}
+.card span {
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+.card-title {
+    font-weight: 400;
+    font-size: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    .container-content {
+        flex-direction: column;
+    }
+    .img{
+        width: 50%;}
+    }
+    
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    footer p{
+        width: 50%;
+        font-size: 0.5em;
+    }
+    img {
+        height: 30%;
+    }
+    .prev, .next,.text {
+        font-size: 11px
+    }
 }
