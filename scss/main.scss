@@ -28,10 +28,11 @@ body {
     align-items: center; 
 }
 
+
 .nav_links {
-    display: flex;
-    justify-content: space-between;  
-    align-items: center; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 li {
@@ -84,11 +85,12 @@ img {
     text-align: center;
 }
 .content {
-    padding: 1rem;
-    line-height: 2rem;
+    padding-top: 2rem;
+    line-height: 2.5rem;
     display: flex;
     flex-direction: column;
 }
+
 .social {
     display: flex;
     padding: 2px;
@@ -96,12 +98,12 @@ img {
     width: 30px;
     text-align: center;
     text-decoration: none;
-    margin: 2px 2px;
     border-radius: 50%;
 }
 
 .fa{
-    padding-right: 20px;
+    margin-top: 3rem;
+    padding-right: 2rem;
 }
 
 h1 {
@@ -110,13 +112,17 @@ h1 {
     font-size: 3vh;
 }
 
-.description   {
-    color: #ccc;
+.description  h2 {
     font-weight: 100;
     font-size: 5vh;
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+.details p{
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding-bottom: 2rem;
 }
 
 span {
