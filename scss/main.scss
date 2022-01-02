@@ -1,13 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&family=Roboto:wght@100;300;400&display=swap');
 * {
-    box-sizing:border-box
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background: rgb(25,25,25);
-    margin: 0;
-    padding: 0;
     color: #ccc;
     font-family: Roboto, sans-serif;
 }
@@ -18,24 +18,25 @@ body {
     min-height: 100vh;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .container-content {
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
+    align-items: center; 
 }
 
 .nav_links {
     display: flex;
-    justify-content: space-evenly;  
+    justify-content: space-between;  
     align-items: center; 
 }
 
 li {
     list-style: none;
-    padding: 1rem;
+    padding: 2rem 0 2rem 0;
     :hover {
         cursor: pointer;
         color: #fff;
@@ -83,7 +84,7 @@ img {
     text-align: center;
 }
 .content {
-    padding: 2rem;
+    padding: 1rem;
     line-height: 2rem;
     display: flex;
     flex-direction: column;
@@ -113,6 +114,9 @@ h1 {
     color: #ccc;
     font-weight: 100;
     font-size: 5vh;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 span {
@@ -228,7 +232,7 @@ span {
     margin-top: 2rem;
 }
 
-.msg-button {
+button {
     width: 100%;
     background-color: goldenrod;
     border: 0;
@@ -238,12 +242,12 @@ span {
     cursor: pointer;
 
 }
-.msg-button:hover {
+button:hover {
     background-color: gold;
     color: rgb(25,25,25);
 }
 
-.msg-button:active {
+button:active {
     background-color: #ccc;
     color: rgb(25,25,25);
 }
@@ -251,8 +255,8 @@ span {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 6rem;
+    justify-content: space-between;
+    margin-top: 2rem;
     gap: 20px;
     padding: 0.5rem;
 }
@@ -266,6 +270,9 @@ span {
     box-shadow: 0 8px 8px 0 black;
     transition: 0.3s;
     padding: 15px 20px 20px 20px;
+}
+.card:hover {
+    box-shadow: 0 32px 32px 0 black;
 }
 
 .card-img {
@@ -282,9 +289,39 @@ span {
     font-weight: 400;
     font-size: 3rem;
     margin-top: 3rem;
+    margin-bottom: 3rem;
     text-align: center;
+    color: goldenrod;
 }
 
+.blogcard {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    box-shadow: 0 8px 8px 0 black;
+    transition: 0.3s;
+}
+.blogcard:hover {
+    box-shadow: 0 32px 32px 0 black;
+}
+.blogcard-content {
+    padding: 1rem 2rem 1rem 2rem;
+}
+.blogcard-content h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: goldenrod;
+}
+.blogcard-content p {
+    text-align: left;
+    margin-top: -1rem;
+    z-index: -1;
+    line-height: 1.5rem;
+    background: linear-gradient(to bottom, #ccc, rgb(25,25,25));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 @media only screen and (max-width: 768px) {
     .container {
         width: 80%;
@@ -294,7 +331,10 @@ span {
     }
     .img{
         width: 50%;}
+    .blogcard {
+        width: 50rem;
     }
+}
     
 @media only screen and (max-width: 480px) {
     .container {
