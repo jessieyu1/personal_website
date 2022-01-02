@@ -146,6 +146,7 @@ span {
   
   /* Next & previous buttons */
   .prev, .next {
+    color:goldenrod;
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -310,12 +311,12 @@ button:active {
 .blogcard-content h4 {
     text-align: center;
     font-size: 1.5rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0 1rem 0;
     color: goldenrod;
 }
 .blogcard-content p {
     text-align: left;
-    margin-top: -1rem;
+    margin-top: 1rem;
     z-index: -1;
     line-height: 1.5rem;
     background: linear-gradient(to bottom, #ccc, rgb(25,25,25));
