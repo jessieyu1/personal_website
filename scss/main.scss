@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: rgb(25,25,25);
     color: #ccc;
@@ -110,8 +114,8 @@ h1 {
     font-weight: 400;
     font-size: 5vh;
     text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .details p{
     font-size: 1.5rem;
@@ -256,7 +260,7 @@ button:active {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 2rem;
     gap: 20px;
     padding: 0.5rem;
@@ -288,7 +292,7 @@ button:active {
 
 .card-title {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3vh;
     margin-top: 3rem;
     margin-bottom: 3rem;
     text-align: center;
@@ -307,9 +311,12 @@ button:active {
 }
 .blogcard-content {
     padding: 1rem 2rem 1rem 2rem;
+    text-align: center;
+}
+.blogcard-content span {
+    color: #ccc;
 }
 .blogcard-content h4 {
-    text-align: center;
     font-size: 1.5rem;
     padding: 1rem 0 1rem 0;
     color: goldenrod;
@@ -330,8 +337,8 @@ button:active {
     .container-content {
         flex-direction: column;
     }
-    .img{
-        width: 50%;}
+    // .img{
+    //     width: 50%;}
     .blogcard {
         width: 50rem;
     }
@@ -341,14 +348,31 @@ button:active {
     .container {
         width: 100%;
     }
-    footer p{
-        width: 50%;
-        font-size: 0.5em;
-    }
-    img {
-        height: 30%;
+    footer p {
+        width: 100%;
     }
     .prev, .next,.text {
         font-size: 11px
+    }
+    .card {
+        width: 5rem;
+        height: 5rem;
+    }
+    .card span {
+        font-weight: 100;
+        font-size: 0.4rem;
+    }
+    .description  h2 {
+        padding-top: 1rem;
+    }
+    .content {
+        padding: 0 1rem 0 1rem;
+    }
+    .fa{
+        margin-top: 1rem;
+        padding-right: 2rem;
+    }
+    .card-img {
+        height: 40px;
     }
 }
